@@ -36,7 +36,7 @@ perguntas.forEach((p, idx) => {
         btn.textContent = "Tente de novo!";
         setTimeout(() => {
           btn.style.background = "#e75480";
-          btn.textContent = btn.textContent.replace("Tente de novo!", ["A) No Shopping", "B) No parque", "C) Em uma pizzaria", "A) Seu Cabelo", "B) Seu bundão", "C) Seu jeito", "A) Iracema", "B) Trem das 11", "C) Convite de Casamento", "A) No carro", "B) No shopping" , "C) Na sua casa" , "A) Um vestido", "B) Um buquê de flores", "C) Uma papete" , "A) Um gato", "B) Uma Cobra", "C) Um Shih Tzu" , "A)  Na igreja e um festão depois", "B) Na praia numa terça feira", "C) No papel e uma viagem pro exterior" ][idx*7+ i])
+          btn.textContent = btn.textContent.replace("Tente de novo!", ["A) No Shopping", "B) No parque", "C) Em uma pizzaria", "A) Seu Cabelo", "B) Seu bundão", "C) Seu jeito", "A) Iracema", "B) Trem das 11", "C) Convite de Casamento", "A) No carro", "B) No shopping" , "C) Na sua casa" , "A) Um vestido", "B) Um buquê de flores", "C) Uma papete" , "A) Um gato", "B) Uma Cobra", "C) Um Shih Tzu" , "A)  Na igreja e um festão depois", "B) Na praia numa terça feira", "C) No papel e uma viagem pro exterior" ][idx*3+ i])
         }, 900);
       }
     })
