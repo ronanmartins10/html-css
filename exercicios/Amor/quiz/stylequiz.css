@@ -1,0 +1,113 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #7530a3 0%, #b086cc 100%);
+}
+
+#chuvaCoracoes {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+h1 {
+  color: #ad0034;
+}
+
+button {
+  background: #ad0034;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 28px;
+  font-size: 1em;
+  margin: 8px 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ad0034;
+}
+
+.mensagem {
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 22px;
+}
+
+.pergunta {
+  margin: 18px 0;
+}
+
+.oculto {
+  display: none;
+}
+
+.heart {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px auto;
+  position: relative;
+  animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 0;
+  width: 45px;
+  height: 72px;
+  background: #ad0034;
+  border-radius: 45px 45px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.12);}
+  100% { transform: scale(1);}
+}
+
+.declaracao {
+  font-size: 1em;
+  color: #ad0034;
+  margin-top: 20px;
+}
+
+#surpresa a {
+    text-decoration: none;
+    color: #7530a3;
+}
+
+#surpresa a:hover {
+    color: darkred;
+    text-decoration: underline;
+}
